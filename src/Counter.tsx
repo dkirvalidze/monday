@@ -12,7 +12,7 @@ export function Counter(props:CounterType) {
             <div className={"Counter-screen"}>{props.initialCounter}
             </div>
             <div className={"Button-area"}>
-                <button className={"Increase"} onClick={props.increaseCounter}>Increase</button>
+                <button disabled={props.initialCounter===5} className={"Increase"} onClick={props.increaseCounter}>Increase</button>
                 <button className={"Reset"} onClick={props.resetCounter}>Reset</button>
             </div>
         </div>
