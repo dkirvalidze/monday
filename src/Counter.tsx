@@ -5,7 +5,8 @@ type CounterType = {
     counter: number;
     increaseCounter: () => void;
     resetCounter: () => void;
-    disabled: boolean;
+    maxDisabled: boolean;
+    minDisabled: boolean;
 }
 
 export function Counter(props: CounterType) {
@@ -14,9 +15,9 @@ export function Counter(props: CounterType) {
             <div className={"Counter-screen"}>{props.counter}
             </div>
             <div className={"Button-area"}>
-                <button disabled={props.disabled} className={"Increase"} onClick={props.increaseCounter}>Increase
+                <button disabled={props.maxDisabled}  className={"Increase"} onClick={props.increaseCounter}>Increase
                 </button>
-                <button className={"Reset"} onClick={props.resetCounter}>Reset</button>
+                <button disabled={props.minDisabled} className={"Reset"} onClick={props.resetCounter}>Reset</button>
             </div>
         </div>
     );

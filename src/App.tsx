@@ -15,12 +15,13 @@ function App() {
         setCounter(0)
     }
 
-    const disabledButton = counter === 5;
+    const maxDisabledButton = counter === 5;
+    const minDisabledButton = counter === 0;
 
     return (
         <div className="App">
             <Counter counter={counter} increaseCounter={increase} resetCounter={reset}
-                     disabled={disabledButton}/>
+                     maxDisabled={maxDisabledButton} minDisabled={minDisabledButton}/>
         </div>
     );
 }
