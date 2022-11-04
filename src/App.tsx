@@ -14,10 +14,11 @@ function App() {
     const reset = () =>{
         setCounter(0)
     }
+    const disabledButton = counter ===5;
 
   return (
     <div className="App">
-        <Counter initialCounter={counter} increaseCounter={increase} resetCounter={reset}/>
+        <Counter initialCounter={counter} increaseCounter={increase} resetCounter={reset} disabled={disabledButton}/>
     </div>
   );
 }
