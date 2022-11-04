@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 type CounterType = {
-    initialCounter: number;
+    counter: number;
     increaseCounter: () => void;
     resetCounter: () => void;
     disabled: boolean;
@@ -11,7 +11,7 @@ type CounterType = {
 export function Counter(props: CounterType) {
     return (
         <div className={"Counter"}>
-            <div className={"Counter-screen"}>{props.initialCounter}
+            <div className={"Counter-screen"}>{props.counter}
             </div>
             <div className={"Button-area"}>
                 <button disabled={props.disabled} className={"Increase"} onClick={props.increaseCounter}>Increase

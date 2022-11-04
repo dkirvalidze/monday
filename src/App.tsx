@@ -19,7 +19,7 @@ function App() {
 
     return (
         <div className="App">
-            <Counter initialCounter={counter} increaseCounter={increase} resetCounter={reset}
+            <Counter counter={counter} increaseCounter={increase} resetCounter={reset}
                      disabled={disabledButton}/>
         </div>
     );
