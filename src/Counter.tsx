@@ -15,9 +15,9 @@ export function Counter(props: CounterType) {
             <div className={"Counter-screen"}>{props.counter}
             </div>
             <div className={"Button-area"}>
-                <button disabled={props.maxDisabled}  className={"Increase"} onClick={props.increaseCounter}>Increase
+                <button disabled={props.maxDisabled}  className={props.maxDisabled?"button-red": "button"} onClick={props.increaseCounter}>Increase
                 </button>
-                <button disabled={props.minDisabled} className={"Reset"} onClick={props.resetCounter}>Reset</button>
+                <button disabled={props.minDisabled} className={"button"} onClick={props.resetCounter}>Reset</button>
             </div>
         </div>
     );
