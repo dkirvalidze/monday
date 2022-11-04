@@ -9,7 +9,7 @@ function App() {
         if (counter === 5) {
             return
         }
-        setCounter(count => count + 1);
+        setCounter(counter => counter + 1);
     };
     const reset = () => {
         setCounter(0)
