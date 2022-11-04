@@ -10,6 +10,7 @@
   top: 150px;
   position: relative;
   text-align: center;
+  border-radius: 30px;
 }
 
 .Counter-screen {
@@ -22,6 +23,7 @@
   position: absolute;
   line-height: initial;
   font-size: 120px;
+  border-radius: 30px;
 }
 
 .Button-area {
@@ -32,6 +34,7 @@
   left: 50px;
   border: 3px solid #63dafc;
   position: absolute;
+  border-radius: 30px;
 }
 
 .Increase {
@@ -39,10 +42,12 @@
   height: 25px;
   margin: 20px;
   background-color: silver;
+  border-radius: 5px;
 }
 .Reset {
   width: 80px;
   height: 25px;
   margin: 20px;
   background-color: silver;
+  border-radius: 5px;
 }
